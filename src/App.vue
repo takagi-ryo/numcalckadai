@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <footer class="footer">
+      <div class="mx-auto" style="width: 200px;">
+        <span class="foottext" href="">github</span>
+        <p class="foottext">使用環境 firebase + vue.js</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -13,7 +15,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -29,4 +30,16 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #111111;
+}
+
+.foottext {
+  color: #EEEEEE;
+}
+
 </style>
