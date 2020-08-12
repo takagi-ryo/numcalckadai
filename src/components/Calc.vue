@@ -1,6 +1,9 @@
 <template>
   <div class="calc">
-    <h3 class="mx-auto" style="width: 200px;">計算回数の比較</h3>
+    <h3 class="mx-auto"
+        style="width: 200px;">
+      計算回数の比較
+    </h3>
     <div class="row">
       <div class="col">
         <h3>二分法</h3>
@@ -86,7 +89,7 @@ export default {
     let a = 1.0;
     let b;
     if(newton_array.length > 0) newton_array.splice(-newton_array.length);
-    while (1) { // eslint-disable-line
+    while (1) {// eslint-disable-line
       b = a - func_y(a) / func_z(a);
       newton_array.push(b);
       console.log(b);
@@ -104,7 +107,3 @@ export default {
   });
 
 </script>
-
-<style>
-
-</style>

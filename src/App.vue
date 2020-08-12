@@ -3,8 +3,12 @@
     <router-view/>
     <footer class="footer">
       <div class="mx-auto" style="width: 200px;">
-        <span class="foottext" href="">github</span>
-        <p class="foottext">使用環境 firebase + vue.js</p>
+        <a class="foottext" href="https://github.com/takagi-ryo/numcalckadai">
+          github
+        </a>
+        <p class="foottext">
+          使用環境 firebase + vue.js
+        </p>
       </div>
     </footer>
   </div>
